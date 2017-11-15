@@ -1,0 +1,38 @@
+{
+    "provider": {
+        "name": "EmployeeDetails_Provider"
+    },
+    "consumer": {
+        "name": "Mock_Consumer"
+    },
+    "interactions": [
+        {
+            "providerState": null,
+            "description": "a request",
+            "request": {
+                "method": "GET",
+                "path": "/employee"
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json;charset=UTF-8"
+                },
+                "body": {
+                    "designation": "manager",
+                    "empId": "1",
+                    "name": "emp1",
+                    "salary": 3000.1
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "pact-specification": {
+            "version": "2.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.2.2"
+        }
+    }
+}
